@@ -1,0 +1,53 @@
+/* This will by my own site style. I will modify it as need be */
+
+img
+{
+  width:300px;
+  height:300px;
+}
+
+
+body {
+  background-color: #c9ffd8;
+}
+
+h1 {
+  color: navy;
+  text-align:center;
+}
+#logo
+{
+	width:100px;
+	height:100px;
+}
+
+a:hover
+{
+  color:OrangeRed;
+  text-decoration:none;
+}
+
+
+p
+{
+  text-indent:1em;
+}
+
+#container
+{
+  margin-left:10px;
+  margin-right:10px;
+}
+
+
+ul {
+	margin-left:20px;
+	margin-right:20px;
+}
+.mobs
+{
+	color:Blue;
+	font-size:200%;
+	font-weight:bold;
+}
+

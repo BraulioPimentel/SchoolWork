@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- Script that will make sure everything is set within the form -->
+<script>
+function validateForm()
+{
+	if(document.forms["myForm"]["fname"].value==null || document.forms["myForm"]["fname"].value=="")
+	{
+		alert("First Name must be filled out");
+		return false;
+	}
+	
+	if(document.forms["myForm"]["lname"].value==null || document.forms["myForm"]["lname"].value=="")
+	{
+		alert("Last name must be filled out");
+		return false;
+	}
+	
+	if(document.forms["myForm"]["ad1"].value==null || document.forms["myForm"]["ad1"].value=="")
+	{
+		alert("Address 1 must be filled out");
+		return false;
+	}
+	if(document.forms["myForm"]["city"].value==null || document.forms["myForm"]["city"].value=="")
+	{
+		alert("City must be filled out");
+		return false;
+	}
+	if(document.forms["myForm"]["zip"].value==null || document.forms["myForm"]["zip"].value=="")
+	{
+		alert("zipcode must be filled out");
+		return false;
+	}
+	if(document.forms["myForm"]["password"].value==null || document.forms["myForm"]["password"].value=="")
+	{
+		alert("Password must be filled out");
+		return false;
+	}
+	if(document.forms["myForm"]["passhint"].value==null || document.forms["myForm"]["passhint"].value=="")
+	{
+		alert("Password hint must be filled out");
+		return false;
+	}
+	if(document.forms["myForm"]["phAnswer"].value==null || document.forms["myForm"]["phAnswer"].value=="")
+	{
+		alert("Password hint answer must be filled out");
+		return false;
+	}
+	return true;
+}
+</script>
+
+<title>
+Register Here!
+</title>
+
+</head>
+
+<body bgcolor="f2f2f2">
+<!--This is my Work-->
+
+<!--This is the general interface at the top of each page -->
+<a href="Homepage.html"><img src="images/logo.png" height="150" title="Go the the Homepage!" width="200" align="left"  alt="the website's logo"/></a>
+<h1 style="text-decoration:underline; text-align:center;"> Braulio's Video Game Shop </h1>
+<a href="aboutus.html" style="text-align:left;">About Us</a>/
+<a href="contact.html" style="text-align:left;">Contact<a>
+<hr/>
+<a href="Homepage.html">Home</a>/
+<br/><br/><br/><br/><br/>
+
+<!-- The form that will get all the information -->
+<br/><br/><br/>
+
+<form name="myForm" action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post" onsubmit="return validateForm();">
+
+<h3> Register</h3>
+<!-- First table will get the personal information -->
+<table style="text-align:left">
+
+<h4 style="color:blue; text-decoration:underline;"> Name and Address</h4>
+<tr><td>
+First Name:</td><td> <input type="text" name="fname"/></td><td>
+Last Name:</td><td> <input type="text" name="lname"/></td></tr>
+<tr><td>
+Address 1:</td><td> <input type="text" name="ad1"/></td><td>
+Address 2:</td><td> <input type="text" name="ad2"/></td></tr>
+<tr><td>
+City:</td><td> <input type="text" name="city"/></td><td>
+
+State: <select name="state">
+<option>AL</option>
+<option>AK</option>
+<option>AZ</option>
+<option>AR</option>
+<option>CA</option>
+<option>CO</option>
+<option>CT</option>
+<option>DE</option>
+<option>FL</option>
+<option>GA</option>
+<option>HI</option>
+<option>ID</option>
+<option>TN</option>
+<option>Other</option>
+</select>
+</td><td>
+
+Zipcode: <input type="text" maxlength="5" size="5" name="zip"/>
+</td></tr>
+<br/>
+
+</table>
+
+
+<!-- Second table will focus on security -->
+<table style="text-align:left">
+<h4 style="color:blue; text-decoration:underline;">Security</h4>
+<tr><td>
+Password: </td><td><input type="password" name="password"/></td></tr><tr><td>
+Password Hint:</td><td> <input type="text" name="passhint"/></td></tr><tr><td>
+Password hint answer: </td><td><input type="text" name="phAnswer"/></tr>
+
+</table>
+
+
+<!-- Final table will focus on preferences and stuff -->
+<table style="text-align:left">
+<h4 style="color:blue; text-decoration:underline;">Preferences</h4>
+<tr><td>
+Favorite Game Platform:</td><td>
+PC <input type="radio" name="platform" value="pc"/></td><td>
+PS4 <input type="radio" name="platform" value="ps"/></td><td>
+Xbox One <input type="radio" name="platform" value="xbox"/></td><td>
+Nintendo Switch <input type="radio" name="platform" value="switch"/></td><td>
+Other <input type="radio" name="platform" value="other"/></td></tr>
+<tr><td>
+Games Quality:
+New <input type="Checkbox" name="newg"/></td><td>
+Like new <input type="Checkbox" name="lnG"/></td><td>
+Refurbished <input type="Checkbox" name="refurb"/></td><td>
+Shabby <input type="Checkbox" name="shab"/></td></tr>
+
+<tr><td>
+Other Preferences: </td><td colspan="3"><textarea rows="10" cols="50">
+</textarea></td></tr>
+
+</table>
+
+<input type="hidden" name="HiddenField" value="hidden"/>
+
+
+<br/><br/><br/><br/><br/>
+<input type="submit" value="Click to Submit"/>
+<input type="reset" value="Reset"/>
+</form>
+
+
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+
+
+
+
+</body>
+
+</html>

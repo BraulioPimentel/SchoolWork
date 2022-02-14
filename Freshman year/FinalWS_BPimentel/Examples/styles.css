@@ -1,0 +1,35 @@
+
+/* Must be after all other anchor selectors. */
+a:hover
+{
+  color:OrangeRed;
+  text-decoration:none;
+}
+
+h2
+{
+  text-align:center;
+}
+
+img
+{
+  width:300px;
+}
+
+p
+{
+  text-indent:1em;
+}
+
+.know
+{
+  color:DarkGreen;
+  font-size:200%;
+  font-weight:bold;
+}
+
+#container
+{
+  margin-left:10px;
+  margin-right:10px;
+}
